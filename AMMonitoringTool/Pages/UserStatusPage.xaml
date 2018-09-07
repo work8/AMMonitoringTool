@@ -1,0 +1,62 @@
+﻿<Page x:Class="AMMonitoringTool.Pages.UserStatusPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AMMonitoringTool.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="319.749"
+      Title="UserStatusPage" d:DesignWidth="636.226" >
+
+
+    <Grid Background="#FFE5E5E5" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="204*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="전체 사용자 수 (라이센스 사용 수)" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="0"  >
+            <Grid>
+
+                <ProgressBar Background="#FF4D97A2" Opacity="0.85" Margin="8" />
+                <TextBlock Text="현재 접속사 수"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="호선별 사용자 수" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <GroupBox Header="상선 사용자 수" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+
+
+        <GroupBox Header="해양 사용자 수" Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <GroupBox Header="특수선 사용자 수" Grid.Row="2" Grid.Column="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <GroupBox Header="기타 사용자 수" Grid.Row="3" Grid.Column="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <GroupBox Header="협업서버 사용자 수" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+        <GroupBox Header="조직별 사용자 수" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2">
+            <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </GroupBox>
+
+
+
+
+    </Grid>
+
+</Page>

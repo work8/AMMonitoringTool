@@ -1,0 +1,34 @@
+﻿<Window x:Class="AMMonitoringTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AMMonitoringTool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="351" Width="689" Loaded="Window_Loaded">
+    
+    <Grid Margin="0,0,12,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        
+            <TabControl  >
+            <TabItem Header="사용자 현황" Background="Orange" >
+                <Frame Source="/Pages/UserStatusPage.xaml" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></Frame>
+            </TabItem>
+            <TabItem Header="사용자 등록현황" Background="Orange">
+                
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0"/>
+            </TabItem>
+            <TabItem Header="AM 호선목록" Background="Orange">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0"/>
+            </TabItem>
+            <TabItem Header="호선 LOCK 현황" Background="Orange">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0"/>
+            </TabItem>
+            <TabItem Header="AM 호선별 SIZE" Background="Orange">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0"/>
+            </TabItem>
+            <Grid Height="130" Width="385"/>
+        </TabControl>
+        
+    </Grid>
+    
+</Window>
